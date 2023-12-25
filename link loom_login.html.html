@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>link loom login Page</title>
+    <link rel="stylesheet" href="style loom.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <p id="fontsty">Link loom</p>
+        </div>
+        <div class="row justify-content-center">
+            <input type="text" placeholder="Phone number, email, username" class="form-control" id="username">
+        </div>
+        <div class="row justify-content-center mt-2">
+            <input type="password" id="password" placeholder="Enter your password" class="form-control">
+        </div>
+        <br>
+        <div class="row justify-content-center mt-2">
+            <p>Forgot your login details? <a href="#">Get help</a></p>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <p>login using Google<a href="https://accounts.google.com/v3/signin/confirmidentifier?authuser=0&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ASKXGp2BJAuI5tUdq0zsYjhaxKLuhxYCLGmQNgAK2S64TnIVc8oHMmLiWq25EZnxI9f00F_Bb9cpbA&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-502850440%3A1703333282981592&theme=glif"> login</a></p>
+        </div>
+        <div class="row justify-content-center mt-2">
+            <button onclick="loginPage()" type="button" class="btn btn-primary">Login</button>
+        </div>
+    </div>
+    <script>
+        function loginPage() {
+            var enteredUsername = document.getElementById('username').value;
+
+            var correctUsername = 'username';
+
+            var enteredPassword = document.getElementById('password').value;
+
+            var correctPassword = 'password';
+
+            if(enteredUsername === correctUsername && enteredPassword === correctPassword){
+
+                window.location.href = "file:///D:/Link%20loom/app.html";
+            } 
+            else {
+            
+                alert('Incorrect User name or Password. Please try again.');
+            }
+            
+            }
+    </script>
+</body>
+</html>
